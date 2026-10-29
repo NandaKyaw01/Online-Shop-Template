@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <rect width="400" height="400" fill="#0f172a"/>
+  <!-- Substrate -->
+  <rect x="60" y="60" width="280" height="280" rx="14" fill="#064e3b" stroke="#10b981" stroke-width="2"/>
+  <!-- Gold corner triangles -->
+  <polygon points="60,60 80,60 60,80" fill="#fbbf24"/>
+  <!-- Gold pads border -->
+  <rect x="75" y="75" width="250" height="250" rx="10" fill="none" stroke="#047857" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <!-- Heat spreader (IHS) -->
+  <rect x="100" y="100" width="200" height="200" rx="12" fill="#cbd5e1" stroke="#94a3b8" stroke-width="3"/>
+  <rect x="110" y="110" width="180" height="180" rx="8" fill="#e2e8f0"/>
+  <!-- Engraving text -->
+  <text x="200" y="160" font-family="monospace" font-size="14" font-weight="bold" fill="#334155" text-anchor="middle">INTEL® XEON®</text>
+  <text x="200" y="190" font-family="monospace" font-size="18" font-weight="bold" fill="#0f172a" text-anchor="middle">E5-2680 v2</text>
+  <text x="200" y="218" font-family="monospace" font-size="12" fill="#475569" text-anchor="middle">10C / 20T • 2.80GHz</text>
+  <text x="200" y="238" font-family="monospace" font-size="10" fill="#64748b" text-anchor="middle">SR1A6 • MALAY</text>
+  <text x="200" y="262" font-family="monospace" font-size="9" fill="#94a3b8" text-anchor="middle">LGA 2011 • 25MB CACHE</text>
+</svg>

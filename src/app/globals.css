@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f8fafc;
+  --foreground: #09090b;
+  --card: #ffffff;
+  --card-foreground: #09090b;
+  --border: #e2e8f0;
+}
+
+.dark {
+  --background: #09090b;
+  --foreground: #fafafa;
+  --card: #18181b;
+  --card-foreground: #fafafa;
+  --border: #27272a;
+}
+
+@font-face {
+  font-family: 'MyanmarSagar';
+  src: url('/fonts/MyanmarSagar.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* MyanmarSagar font - active exclusively when Myanmar language is selected */
+html[lang="my"],
+html[lang="my"] body,
+html[lang="my"] input,
+html[lang="my"] textarea,
+html[lang="my"] select,
+html[lang="my"] button,
+.lang-my,
+.lang-my body,
+.lang-my input,
+.lang-my textarea,
+.lang-my select,
+.lang-my button,
+:lang(my) {
+  font-family: 'MyanmarSagar', "Pyidaungsu", "Padauk", "Noto Sans Myanmar", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  letter-spacing: 0.01em;
+}
+
+.font-myanmar {
+  font-family: 'MyanmarSagar', "Pyidaungsu", "Padauk", "Noto Sans Myanmar", sans-serif;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #09090b;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}

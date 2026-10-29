@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <rect width="400" height="400" fill="#090d16"/>
+  <path d="M 50 140 L 350 140 L 340 260 L 60 260 Z" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+  <polygon points="50,140 180,140 160,200 50,180" fill="#334155" opacity="0.6"/>
+  <polygon points="180,140 350,140 330,190 190,190" fill="#475569" opacity="0.4"/>
+  <circle cx="140" cy="200" r="45" fill="#0f172a" stroke="#64748b" stroke-width="2"/>
+  <circle cx="140" cy="200" r="16" fill="#1e293b" stroke="#76a928" stroke-width="2"/>
+  <circle cx="260" cy="200" r="45" fill="#0f172a" stroke="#64748b" stroke-width="2"/>
+  <circle cx="260" cy="200" r="16" fill="#1e293b" stroke="#76a928" stroke-width="2"/>
+  <line x1="140" y1="160" x2="140" y2="182" stroke="#475569" stroke-width="3"/>
+  <line x1="140" y1="218" x2="140" y2="240" stroke="#475569" stroke-width="3"/>
+  <line x1="105" y1="200" x2="122" y2="200" stroke="#475569" stroke-width="3"/>
+  <line x1="158" y1="200" x2="175" y2="200" stroke="#475569" stroke-width="3"/>
+  <line x1="260" y1="160" x2="260" y2="182" stroke="#475569" stroke-width="3"/>
+  <line x1="260" y1="218" x2="260" y2="240" stroke="#475569" stroke-width="3"/>
+  <rect x="42" y="130" width="8" height="140" fill="#94a3b8" rx="2"/>
+  <rect x="110" y="260" width="180" height="14" fill="#ca8a04" rx="1"/>
+  <rect x="110" y="128" width="180" height="8" rx="2" fill="#76a928"/>
+  <text x="200" y="135" font-family="monospace" font-size="7" font-weight="bold" fill="#ffffff" text-anchor="middle">GEFORCE GTX</text>
+  <text x="200" y="310" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#e2e8f0" text-anchor="middle">GEFORCE GTX 1080</text>
+  <text x="200" y="332" font-family="monospace" font-size="11" fill="#76a928" text-anchor="middle">8GB GDDR5X • PASCAL</text>
+</svg>

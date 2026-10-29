@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <rect width="400" height="400" fill="#0f172a"/>
+  <rect x="70" y="70" width="260" height="170" rx="8" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+  <rect x="78" y="78" width="244" height="152" rx="4" fill="#020617"/>
+  <rect x="84" y="84" width="232" height="140" rx="3" fill="#0c4a6e" opacity="0.6"/>
+  <circle cx="200" cy="145" r="35" fill="#38bdf8" opacity="0.4"/>
+  <text x="200" y="152" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#f8fafc" text-anchor="middle">acer</text>
+  <circle cx="200" cy="74" r="2" fill="#64748b"/>
+  <rect x="150" y="238" width="100" height="6" rx="2" fill="#334155"/>
+  <polygon points="50,290 70,242 330,242 350,290" fill="#334155" stroke="#64748b" stroke-width="1.5"/>
+  <polygon points="76,275 88,247 312,247 324,275" fill="#1e293b"/>
+  <rect x="175" y="278" width="50" height="10" rx="1.5" fill="#475569" stroke="#64748b" stroke-width="1"/>
+  <text x="200" y="335" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#f8fafc" text-anchor="middle">Acer Aspire Lite 16</text>
+  <text x="200" y="355" font-family="monospace" font-size="11" fill="#38bdf8" text-anchor="middle">i5-1235U • 16GB RAM • 512GB SSD</text>
+</svg>

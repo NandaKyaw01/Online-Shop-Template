@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 700" width="500" height="700">
+  <rect width="500" height="700" fill="#f8fafc"/>
+  <rect width="500" height="120" fill="#1d4ed8"/>
+  <text x="250" y="65" font-family="system-ui, sans-serif" font-size="24" font-weight="900" fill="#ffffff" text-anchor="middle">KBZPay Transfer Receipt</text>
+  <text x="250" y="95" font-family="monospace" font-size="14" fill="#93c5fd" text-anchor="middle">Transaction Successful</text>
+  
+  <rect x="30" y="150" width="440" height="420" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <circle cx="250" cy="210" r="35" fill="#10b981"/>
+  <path d="M 235 210 L 245 220 L 265 200" stroke="#ffffff" stroke-width="4" fill="none" stroke-linecap="round"/>
+  
+  <text x="250" y="275" font-family="system-ui, sans-serif" font-size="16" fill="#64748b" text-anchor="middle">Transferred Amount</text>
+  <text x="250" y="320" font-family="monospace" font-size="36" font-weight="bold" fill="#0f172a" text-anchor="middle">$184.00</text>
+  
+  <line x1="60" y1="350" x2="440" y2="350" stroke="#f1f5f9" stroke-width="2"/>
+  
+  <text x="70" y="385" font-family="system-ui, sans-serif" font-size="13" fill="#64748b">Recipient Name:</text>
+  <text x="430" y="385" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#0f172a" text-anchor="end">TECH HARDWARE STORE</text>
+  
+  <text x="70" y="420" font-family="system-ui, sans-serif" font-size="13" fill="#64748b">Recipient Phone:</text>
+  <text x="430" y="420" font-family="monospace" font-size="13" font-weight="bold" fill="#1d4ed8" text-anchor="end">09791234567</text>
+  
+  <text x="70" y="455" font-family="system-ui, sans-serif" font-size="13" fill="#64748b">Transaction ID:</text>
+  <text x="430" y="455" font-family="monospace" font-size="13" fill="#334155" text-anchor="end">KP-20261001-98745</text>
+  
+  <text x="70" y="490" font-family="system-ui, sans-serif" font-size="13" fill="#64748b">Transfer Date:</text>
+  <text x="430" y="490" font-family="monospace" font-size="13" fill="#334155" text-anchor="end">2026-10-01 11:25:40</text>
+  
+  <text x="70" y="525" font-family="system-ui, sans-serif" font-size="13" fill="#64748b">Payment Channel:</text>
+  <text x="430" y="525" font-family="system-ui, sans-serif" font-size="13" fill="#10b981" text-anchor="end">KBZPay Balance</text>
+</svg>

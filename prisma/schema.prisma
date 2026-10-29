@@ -1,0 +1,104 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+enum Condition {
+  NEW
+  SECONDHAND
+}
+
+enum OrderStatus {
+  PENDING
+  APPROVED
+  REJECTED
+}
+
+model Product {
+  id          String      @id @default(cuid())
+  title       String
+  description String      @db.Text
+  price       Float
+  condition   Condition   @default(NEW)
+  stock       Int         @default(0)
+  image_url   String
+  created_at  DateTime    @default(now())
+
+  order_items OrderItem[]
+
+  @@index([condition])
+  @@index([created_at])
+  @@map("products")
+}
+
+model Order {
+  id                  String      @id @default(cuid())
+  user_id             String?
+  customer_name       String
+  phone               String
+  address             String      @db.Text
+  total_amount        Float
+  kpay_screenshot_url String
+  status              OrderStatus @default(PENDING)
+  created_at          DateTime    @default(now())
+
+  user                User?       @relation(fields: [user_id], references: [id], onDelete: SetNull)
+  items               OrderItem[]
+
+  @@index([user_id])
+  @@index([status])
+  @@index([created_at])
+  @@map("orders")
+}
+
+model OrderItem {
+  id         String   @id @default(cuid())
+  order_id   String
+  product_id String
+  quantity   Int
+  price      Float
+
+  order      Order    @relation(fields: [order_id], references: [id], onDelete: Cascade)
+  product    Product  @relation(fields: [product_id], references: [id])
+
+  @@index([order_id])
+  @@index([product_id])
+  @@map("order_items")
+}
+
+model User {
+  id            String         @id @default(cuid())
+  username      String         @unique
+  password_hash String
+  name          String?
+  phone         String?
+  address       String?        @db.Text
+  role          String         @default("USER") // "USER" | "ADMIN"
+  created_at    DateTime       @default(now())
+  updated_at    DateTime       @default(now()) @updatedAt
+
+  orders        Order[]
+  notifications Notification[]
+
+  @@index([username])
+  @@map("users")
+}
+
+model Notification {
+  id         String   @id @default(cuid())
+  user_id    String
+  title      String
+  message    String   @db.Text
+  is_read    Boolean  @default(false)
+  created_at DateTime @default(now())
+
+  user       User     @relation(fields: [user_id], references: [id], onDelete: Cascade)
+
+  @@index([user_id, is_read])
+  @@index([created_at])
+  @@map("notifications")
+}
